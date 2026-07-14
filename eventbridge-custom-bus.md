@@ -1,5 +1,7 @@
 ---
-tags: event-driven, messaging
+tags:
+  - event-driven
+  - messaging
 ---
 
 # Custom EventBridge Bus with Rules, Content Filtering, Archive, and Replay

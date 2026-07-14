@@ -1,5 +1,7 @@
 ---
-tags: compute, lambda
+tags:
+  - compute
+  - lambda
 ---
 
 # Lambda Layer for Shared Python Dependencies

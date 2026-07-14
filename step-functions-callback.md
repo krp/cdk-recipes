@@ -1,5 +1,8 @@
 ---
-tags: step-functions, compute, event-driven
+tags:
+  - step-functions
+  - compute
+  - event-driven
 ---
 
 # Step Functions Callback Pattern

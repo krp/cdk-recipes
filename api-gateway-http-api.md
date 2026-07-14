@@ -1,5 +1,7 @@
 ---
-tags: api-gateway, compute
+tags:
+  - api-gateway
+  - compute
 ---
 
 # API Gateway HTTP API

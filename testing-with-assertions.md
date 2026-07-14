@@ -1,5 +1,7 @@
 ---
-tags: testing, advanced
+tags:
+  - testing
+  - advanced
 ---
 
 # Testing with Assertions

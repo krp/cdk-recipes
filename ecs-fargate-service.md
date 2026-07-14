@@ -1,5 +1,7 @@
 ---
-tags: containers, compute
+tags:
+  - containers
+  - compute
 ---
 
 # ECS Fargate Service with ALB

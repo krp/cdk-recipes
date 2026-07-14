@@ -1,5 +1,8 @@
 ---
-tags: event-driven, storage, compute
+tags:
+  - event-driven
+  - storage
+  - compute
 ---
 
 # Async Pipeline: S3 to SQS to Lambda to DynamoDB

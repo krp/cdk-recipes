@@ -1,5 +1,6 @@
 ---
-tags: security
+tags:
+  - security
 ---
 
 # Secrets Manager Secret with Rotation, Dynamic References, and Lambda Integration

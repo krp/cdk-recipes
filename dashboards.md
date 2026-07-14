@@ -1,5 +1,6 @@
 ---
-tags: monitoring
+tags:
+  - monitoring
 ---
 
 # CloudWatch Dashboard with Metric Graphs, Alarm Status, and Text Widgets

@@ -1,5 +1,7 @@
 ---
-tags: compute, networking
+tags:
+  - compute
+  - networking
 ---
 
 # EC2 Instance with SSM Session Manager, VPC, and User Data

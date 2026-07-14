@@ -1,5 +1,7 @@
 ---
-tags: ci-cd, advanced
+tags:
+  - ci-cd
+  - advanced
 ---
 
 # Multi-Account Deployments

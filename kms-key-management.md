@@ -1,5 +1,7 @@
 ---
-tags: security, storage
+tags:
+  - security
+  - storage
 ---
 
 # KMS Key with Grants, Alias, Rotation, Multi-Region Replica, and Cross-Account Access

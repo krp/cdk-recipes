@@ -1,5 +1,8 @@
 ---
-tags: compute, lambda, api-gateway
+tags:
+  - compute
+  - lambda
+  - api-gateway
 ---
 
 # Lambda Function URL

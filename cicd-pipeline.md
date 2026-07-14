@@ -1,5 +1,6 @@
 ---
-tags: ci-cd
+tags:
+  - ci-cd
 ---
 
 # CDK Pipeline — Self-Mutating CodePipeline for Deploying CDK Apps

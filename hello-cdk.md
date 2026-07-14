@@ -1,5 +1,6 @@
 ---
-tags: foundation
+tags:
+  - foundation
 ---
 
 # Hello CDK

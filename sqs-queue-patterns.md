@@ -1,5 +1,7 @@
 ---
-tags: event-driven, messaging
+tags:
+  - event-driven
+  - messaging
 ---
 
 # SQS Queue with DLQ, Redrive, Visibility Timeout, and FIFO

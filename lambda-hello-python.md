@@ -1,5 +1,7 @@
 ---
-tags: compute, lambda
+tags:
+  - compute
+  - lambda
 ---
 
 # Lambda Function with Python, CDK Bundling, and CloudWatch Logs

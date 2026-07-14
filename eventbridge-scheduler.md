@@ -1,5 +1,7 @@
 ---
-tags: event-driven, compute
+tags:
+  - event-driven
+  - compute
 ---
 
 # EventBridge Scheduler — Cron and Rate Triggers for Lambda

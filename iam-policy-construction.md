@@ -1,5 +1,7 @@
 ---
-tags: security, iam
+tags:
+  - security
+  - iam
 ---
 
 # IAM Policy Documents with Conditions, Resources, and Multiple Statements

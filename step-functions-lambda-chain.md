@@ -1,5 +1,7 @@
 ---
-tags: step-functions, compute
+tags:
+  - step-functions
+  - compute
 ---
 
 # Step Functions Lambda Chain

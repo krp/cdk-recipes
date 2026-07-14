@@ -1,5 +1,7 @@
 ---
-tags: storage, event-driven
+tags:
+  - storage
+  - event-driven
 ---
 
 # S3 Event Notifications to SQS, SNS, and Lambda

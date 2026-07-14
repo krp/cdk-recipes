@@ -1,5 +1,7 @@
 ---
-tags: security, advanced
+tags:
+  - security
+  - advanced
 ---
 
 # Permission Boundaries

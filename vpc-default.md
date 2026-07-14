@@ -1,5 +1,6 @@
 ---
-tags: networking
+tags:
+  - networking
 ---
 
 # Default VPC

@@ -1,5 +1,7 @@
 ---
-tags: security, iam
+tags:
+  - security
+  - iam
 ---
 
 # IAM Roles, Managed Policies, and the CDK Grant Pattern

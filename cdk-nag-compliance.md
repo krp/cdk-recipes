@@ -1,5 +1,8 @@
 ---
-tags: testing, security, advanced
+tags:
+  - testing
+  - security
+  - advanced
 ---
 
 # CDK Nag Compliance

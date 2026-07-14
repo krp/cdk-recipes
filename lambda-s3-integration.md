@@ -1,5 +1,8 @@
 ---
-tags: compute, lambda, storage
+tags:
+  - compute
+  - lambda
+  - storage
 ---
 
 # S3-Triggered Lambda with Cross-Bucket Processing

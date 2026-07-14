@@ -1,5 +1,6 @@
 ---
-tags: storage
+tags:
+  - storage
 ---
 
 # S3 Static Website with CloudFront OAI and Route53

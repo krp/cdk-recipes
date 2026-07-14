@@ -1,5 +1,6 @@
 ---
-tags: advanced
+tags:
+  - advanced
 ---
 
 # Construct Patterns

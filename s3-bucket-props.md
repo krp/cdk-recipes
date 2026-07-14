@@ -1,5 +1,6 @@
 ---
-tags: storage
+tags:
+  - storage
 ---
 
 # S3 Bucket with Encryption, Versioning, Lifecycle, and Intelligent-Tiering

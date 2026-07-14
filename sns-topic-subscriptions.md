@@ -1,5 +1,7 @@
 ---
-tags: event-driven, messaging
+tags:
+  - event-driven
+  - messaging
 ---
 
 # SNS Topic with Multiple Subscription Types and DLQ

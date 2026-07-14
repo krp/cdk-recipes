@@ -1,5 +1,6 @@
 ---
-tags: storage
+tags:
+  - storage
 ---
 
 # DynamoDB Table with GSI and Autoscaling

@@ -1,5 +1,7 @@
 ---
-tags: foundation, storage
+tags:
+  - foundation
+  - storage
 ---
 
 # Your First Bucket

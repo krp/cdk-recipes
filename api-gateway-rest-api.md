@@ -1,5 +1,7 @@
 ---
-tags: api-gateway, security
+tags:
+  - api-gateway
+  - security
 ---
 
 # API Gateway REST API

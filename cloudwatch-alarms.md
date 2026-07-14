@@ -1,5 +1,6 @@
 ---
-tags: monitoring
+tags:
+  - monitoring
 ---
 
 # CloudWatch Metric, Alarm with SNS Action, and Composite Alarms

@@ -1,5 +1,7 @@
 ---
-tags: migration, advanced
+tags:
+  - migration
+  - advanced
 ---
 
 # Import Existing Resources
