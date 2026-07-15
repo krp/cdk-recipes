@@ -12,118 +12,118 @@ A progressive collection of AWS CDK snippets in Python. Each file demonstrates o
 
 | File | What it covers |
 |------|----------------|
-| [[hello-cdk]] | App, Stack, synth, tokens — the minimal CDK app |
-| [[your-first-bucket]] | L2 construct, logical IDs, RemovalPolicy, physical names |
-| [[stack-parameters-and-context]] | Context variables, SSM lookups, CfnParameter — synthesis vs deploy-time values |
-| [[environment-context]] | env, Aws.ACCOUNT_ID token, partition awareness, stage-based config |
-| [[multiple-stacks]] | Cross-stack references, Fn::ImportValue, stack dependencies |
+| [[foundations/hello-cdk]] | App, Stack, synth, tokens — the minimal CDK app |
+| [[foundations/your-first-bucket]] | L2 construct, logical IDs, RemovalPolicy, physical names |
+| [[foundations/stack-parameters-and-context]] | Context variables, SSM lookups, CfnParameter — synthesis vs deploy-time values |
+| [[foundations/environment-context]] | env, Aws.ACCOUNT_ID token, partition awareness, stage-based config |
+| [[foundations/multiple-stacks]] | Cross-stack references, Fn::ImportValue, stack dependencies |
 
 ## Storage
 
 | File | What it covers |
 |------|----------------|
-| [[s3-bucket-props]] | Encryption, versioning, lifecycle rules, intelligent-tiering |
-| [[s3-static-website]] | S3 website hosting, CloudFront OAI, Route53 alias, BucketDeployment |
-| [[s3-event-notifications]] | S3 → SQS/SNS/Lambda event destinations, prefix/suffix filtering |
-| [[dynamodb-basics]] | Table keys, GSI, billing modes, autoscaling, removal policy |
+| [[storage/s3-bucket-props]] | Encryption, versioning, lifecycle rules, intelligent-tiering |
+| [[storage/s3-static-website]] | S3 website hosting, CloudFront OAI, Route53 alias, BucketDeployment |
+| [[storage/s3-event-notifications]] | S3 → SQS/SNS/Lambda event destinations, prefix/suffix filtering |
+| [[storage/dynamodb-basics]] | Table keys, GSI, billing modes, autoscaling, removal policy |
 
 ## Compute
 
 | File | What it covers |
 |------|----------------|
-| [[lambda-hello-python]] | Code.from_asset, runtime, handler, asset change detection |
-| [[lambda-url]] | FunctionUrl, AWS_IAM auth, CORS, SigV4 |
-| [[lambda-layers]] | LayerVersion, path structure, PythonLayerVersion |
-| [[lambda-s3-integration]] | S3-triggered Lambda, grant pattern, error handling |
-| [[ec2-basics]] | Instance, UserData, SSM, security group defaults |
+| [[compute/lambda-hello-python]] | Code.from_asset, runtime, handler, asset change detection |
+| [[compute/lambda-url]] | FunctionUrl, AWS_IAM auth, CORS, SigV4 |
+| [[compute/lambda-layers]] | LayerVersion, path structure, PythonLayerVersion |
+| [[compute/lambda-s3-integration]] | S3-triggered Lambda, grant pattern, error handling |
+| [[compute/ec2-basics]] | Instance, UserData, SSM, security group defaults |
 
 ## Networking
 
 | File | What it covers |
 |------|----------------|
-| [[vpc-default]] | Default Vpc construct, subnet types, NAT gateway costs |
-| [[vpc-custom]] | Custom CIDR, subnet configuration, AZ awareness, cross-AZ NAT |
-| [[vpc-endpoints]] | Gateway vs Interface endpoints, Private DNS, cost |
+| [[networking/vpc-default]] | Default Vpc construct, subnet types, NAT gateway costs |
+| [[networking/vpc-custom]] | Custom CIDR, subnet configuration, AZ awareness, cross-AZ NAT |
+| [[networking/vpc-endpoints]] | Gateway vs Interface endpoints, Private DNS, cost |
 
 ## Containers
 
 | File | What it covers |
 |------|----------------|
-| [[ecs-fargate-service]] | FargateTaskDefinition, ALB, auto-scaling, ContainerImage.from_registry |
-| [[ecs-cdk-docker]] | ContainerImage.from_asset, DockerImageFunction, ECR lifecycle policies |
+| [[containers/ecs-fargate-service]] | FargateTaskDefinition, ALB, auto-scaling, ContainerImage.from_registry |
+| [[containers/ecs-cdk-docker]] | ContainerImage.from_asset, DockerImageFunction, ECR lifecycle policies |
 
 ## Event-Driven
 
 | File | What it covers |
 |------|----------------|
-| [[sns-topic-subscriptions]] | Subscription types, DLQ, filter policies |
-| [[sqs-queue-patterns]] | DLQ, dead-letter redrive, visibility timeout, FIFO |
-| [[eventbridge-scheduler]] | CfnSchedule, cron/rate, flexible time windows, L1 patterns |
-| [[eventbridge-custom-bus]] | Custom bus, Match class, rules, archive, replay, input transformation |
-| [[async-pipeline-s3-sqs-lambda-ddb]] | End-to-end: S3 → SQS → Lambda → DynamoDB with DLQ |
+| [[event-driven/sns-topic-subscriptions]] | Subscription types, DLQ, filter policies |
+| [[event-driven/sqs-queue-patterns]] | DLQ, dead-letter redrive, visibility timeout, FIFO |
+| [[event-driven/eventbridge-scheduler]] | CfnSchedule, cron/rate, flexible time windows, L1 patterns |
+| [[event-driven/eventbridge-custom-bus]] | Custom bus, Match class, rules, archive, replay, input transformation |
+| [[event-driven/async-pipeline-s3-sqs-lambda-ddb]] | End-to-end: S3 → SQS → Lambda → DynamoDB with DLQ |
 
 ## API Gateway
 
 | File | What it covers |
 |------|----------------|
-| [[api-gateway-http-api]] | HttpApi, Lambda integration, CORS, payload version 2.0 |
-| [[api-gateway-rest-api]] | RestApi, models, request validation, Cognito authorizer, usage plans |
-| [[api-gateway-websocket]] | WebSocketApi, routes, @connections endpoint |
+| [[api-gateway/api-gateway-http-api]] | HttpApi, Lambda integration, CORS, payload version 2.0 |
+| [[api-gateway/api-gateway-rest-api]] | RestApi, models, request validation, Cognito authorizer, usage plans |
+| [[api-gateway/api-gateway-websocket]] | WebSocketApi, routes, @connections endpoint |
 
 ## Step Functions
 
 | File | What it covers |
 |------|----------------|
-| [[step-functions-basics]] | Chain DSL, Pass/Wait/Choice/Map, standard vs express |
-| [[step-functions-lambda-chain]] | LambdaInvoke, retry/catch, result_path, result_selector |
-| [[step-functions-callback]] | .waitForTaskToken pattern, external system integration |
+| [[step-functions/step-functions-basics]] | Chain DSL, Pass/Wait/Choice/Map, standard vs express |
+| [[step-functions/step-functions-lambda-chain]] | LambdaInvoke, retry/catch, result_path, result_selector |
+| [[step-functions/step-functions-callback]] | .waitForTaskToken pattern, external system integration |
 
 ## Security
 
 | File | What it covers |
 |------|----------------|
-| [[iam-policy-construction]] | PolicyDocument, PolicyStatement, conditions, Principals |
-| [[iam-roles-and-grants]] | grant pattern, managed policies, IGrantable, service principals |
-| [[kms-key-management]] | KMS key, rotation, grants to roles, multi-region |
-| [[secrets-manager]] | Secret rotation, HostedRotation, grant_read, dynamic references |
+| [[security/iam-policy-construction]] | PolicyDocument, PolicyStatement, conditions, Principals |
+| [[security/iam-roles-and-grants]] | grant pattern, managed policies, IGrantable, service principals |
+| [[security/kms-key-management]] | KMS key, rotation, grants to roles, multi-region |
+| [[security/secrets-manager]] | Secret rotation, HostedRotation, grant_read, dynamic references |
 
 ## Monitoring
 
 | File | What it covers |
 |------|----------------|
-| [[cloudwatch-alarms]] | Metric factory, Alarm, CompositeAlarm, treat_missing_data |
-| [[dashboards]] | GraphWidget, AlarmStatusWidget, dashboard JSON synthesis |
+| [[monitoring/cloudwatch-alarms]] | Metric factory, Alarm, CompositeAlarm, treat_missing_data |
+| [[monitoring/dashboards]] | GraphWidget, AlarmStatusWidget, dashboard JSON synthesis |
 
 ## CI/CD
 
 | File | What it covers |
 |------|----------------|
-| [[cicd-pipeline]] | CodePipeline, self-mutation, ShellStep, Stage, cross-account |
+| [[ci-cd/cicd-pipeline]] | CodePipeline, self-mutation, ShellStep, Stage, cross-account |
 
 ## Advanced Constructs
 
 | File | What it covers |
 |------|----------------|
-| [[custom-constructs]] | Writing your own Construct, extending vs composing, attribute exposure |
-| [[construct-patterns]] | Grant forwarding, IGrantable, dataclass props, interface segregation |
-| [[nested-stacks]] | NestedStack, CloudFormation limits, when to use vs multiple stacks |
-| [[escape-hatches]] | .node.default_child, add_property_override, CfnResource |
-| [[custom-resources]] | Provider, on_event_handler, async signaling via SQS/SNS |
+| [[advanced-constructs/custom-constructs]] | Writing your own Construct, extending vs composing, attribute exposure |
+| [[advanced-constructs/construct-patterns]] | Grant forwarding, IGrantable, dataclass props, interface segregation |
+| [[advanced-constructs/nested-stacks]] | NestedStack, CloudFormation limits, when to use vs multiple stacks |
+| [[advanced-constructs/escape-hatches]] | .node.default_child, add_property_override, CfnResource |
+| [[advanced-constructs/custom-resources]] | Provider, on_event_handler, async signaling via SQS/SNS |
 
 ## Migration & Composition
 
 | File | What it covers |
 |------|----------------|
-| [[import-existing-resources]] | from_* methods, resource import, context provider caching |
-| [[permission-boundaries]] | Aspects for boundary enforcement, cdk bootstrap flag |
-| [[multi-account-deployments]] | env per stack, pipeline cross-account, bootstrap prerequisites |
+| [[migration-composition/import-existing-resources]] | from_* methods, resource import, context provider caching |
+| [[migration-composition/permission-boundaries]] | Aspects for boundary enforcement, cdk bootstrap flag |
+| [[migration-composition/multi-account-deployments]] | env per stack, pipeline cross-account, bootstrap prerequisites |
 
 ## Testing & Compliance
 
 | File | What it covers |
 |------|----------------|
-| [[testing-with-assertions]] | Template.from_stack, has_resource_properties, Match matchers |
-| [[cdk-nag-compliance]] | AwsSolutionsChecks, NagSuppressions, rule packs, CI blocking |
+| [[testing-compliance/testing-with-assertions]] | Template.from_stack, has_resource_properties, Match matchers |
+| [[testing-compliance/cdk-nag-compliance]] | AwsSolutionsChecks, NagSuppressions, rule packs, CI blocking |
 
 ---
 
