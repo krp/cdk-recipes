@@ -24,6 +24,7 @@ A progressive collection of AWS CDK snippets in Python. Each file demonstrates o
 |------|----------------|
 | [[storage/s3-bucket-props]] | Encryption, versioning, lifecycle rules, intelligent-tiering |
 | [[storage/s3-static-website]] | S3 website hosting, CloudFront OAI, Route53 alias, BucketDeployment |
+| [[storage/cloudfront-oac]] | CloudFront distribution + OAC over a private S3 bucket, CfnOutputs |
 | [[storage/s3-event-notifications]] | S3 → SQS/SNS/Lambda event destinations, prefix/suffix filtering |
 | [[storage/dynamodb-basics]] | Table keys, GSI, billing modes, autoscaling, removal policy |
 
@@ -66,6 +67,7 @@ A progressive collection of AWS CDK snippets in Python. Each file demonstrates o
 
 | File | What it covers |
 |------|----------------|
+| [[api-gateway/api-gateway-basics]] | LambdaRestApi proxy, inline Python Lambda, auto-deploy stage |
 | [[api-gateway/api-gateway-http-api]] | HttpApi, Lambda integration, CORS, payload version 2.0 |
 | [[api-gateway/api-gateway-rest-api]] | RestApi, models, request validation, Cognito authorizer, usage plans |
 | [[api-gateway/api-gateway-websocket]] | WebSocketApi, routes, @connections endpoint |
