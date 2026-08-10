@@ -36,6 +36,10 @@ class OrdersStack(Stack):
             ),
             billing_mode=dynamodb.BillingMode.PAY_PER_REQUEST,
             removal_policy=RemovalPolicy.DESTROY,
+            point_in_time_recovery_specification=dynamodb.PointInTimeRecoverySpecification(
+                point_in_time_recovery_enabled=True,
+                recovery_period_in_days=1,
+            ),
         )
 
         # Add a GSI for querying by order status
@@ -61,6 +65,10 @@ class OrdersStack(Stack):
             read_capacity=5,
             write_capacity=5,
             removal_policy=RemovalPolicy.DESTROY,
+            point_in_time_recovery_specification=dynamodb.PointInTimeRecoverySpecification(
+                point_in_time_recovery_enabled=True,
+                recovery_period_in_days=1,
+            ),
         )
 
         # Enable read autoscaling
@@ -91,6 +99,7 @@ class OrdersStack(Stack):
 - **GSI keys** are modeled as separate `Attribute` definitions. The partition key and optional sort key of a GSI are independent of the table's primary key. Each GSI incurs additional storage and write capacity costs (for provisioning the index), and its throughput is consumed from the table's provisioned capacity or on-demand pool depending on the billing mode.
 
 - **`RemovalPolicy.DESTROY` on a table with data:** CDK will generate the CloudFormation template that deletes the table, and CloudFormation will delete it even if it contains data — unlike S3 buckets which require explicit emptying. There is no built-in `auto_delete_objects` equivalent. If you need to preserve data, use `RemovalPolicy.RETAIN` and handle cleanup separately.
+- **`point_in_time_recovery_specification`** enables continuous backups. Pass a `PointInTimeRecoverySpecification` with `point_in_time_recovery_enabled=True`; `recovery_period_in_days` (1–35, default 35) controls how far back you can restore. CDK synthesizes it as the `PointInTimeRecoverySpecification` property on the `AWS::DynamoDB::Table` resource. The older boolean `point_in_time_recovery=True` still works but is **deprecated** — and the two cannot be set together. This is orthogonal to `RemovalPolicy`: PITR protects against accidental writes or deletes against live data, while `RemovalPolicy` governs what happens to the table when the stack itself is deleted. It incurs continuous backup charges but is the recommended default for any table holding production data.
 
 - **`TableV2`** (Global Tables) is a separate construct in `aws_dynamodb.TableV2` (imported via `aws-cdk-lib/aws-dynamodb`). It creates a DynamoDB global table with multi-region replication, requires `BillingMode.PAY_PER_REQUEST`, and supports replicas via the `.add_replica()` method. Use `Table` for single-region tables and `TableV2` for multi-region active-active setups.
 
